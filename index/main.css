@@ -1,0 +1,87 @@
+Reset
+html {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+body{
+	height: 98vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	color: rgb(255, 0, 0);
+	text-align: center;
+    margin-bottom: 20px;
+}
+.container {
+    width: 90%; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 15px; 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15), 
+                -10px -10px 20px rgba(255, 255, 255, 0.8); 
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2), 
+                -15px -15px 30px rgba(255, 255, 255, 0.9);
+}
+
+.numberWrapper{
+	display: flex ;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+}
+.box-main{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 800px;
+    margin: 0 auto;
+}
+.box-row{
+	display: grid;
+	grid-template-columns: repeat(7, 1fr); 
+	grid-template-rows: auto;
+}
+.box{
+	border: 1px solid rgb(255, 255, 255);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: rgb(50, 146, 201);
+}
+.btn{
+font-size: 16px;
+font-weight: 700;
+line-height: 100%;
+display: flex;
+color: aliceblue;
+align-items: center;
+justify-content: center;
+background-color: rgb(0, 213, 255);
+padding: 8px 18px;
+border-radius: 8px;
+margin: 4px 0px;
+margin-left: 8px;
+cursor: pointer;
+}
+
+.svgwraper{
+	width: 100%;
+	max-width: 40px;
+	height: 40px;	
+}
