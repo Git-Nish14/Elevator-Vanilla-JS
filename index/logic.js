@@ -110,7 +110,7 @@ function moveElevator(lift, targetFloor, button) {
 
   setTimeout(function () {
     updateElevatorUI(elevator, "green");
-    updateButtonUI(button, "Arrived", "white", false);
+    updateButtonUI(button, "Arrived", "black", false);
     setTimeout(function () {
       resetElevator(lift, elevator, button);
     }, 2000);
